@@ -48,11 +48,15 @@ a:link,a:active,a:visited,a:hover
 	color:white;
 }
 
-
+body
+{
+	background-color: #0F7BC0;
+}
 /*---------------------首页---------------------------*/
+
 .shopping_body,.shopping_box
 {
-	background-color: #f9f9f9;
+	/*background-color: #f9f9f9;*/
 	font-size: 0.533333rem;
 }
 
@@ -117,13 +121,16 @@ a:link,a:active,a:visited,a:hover
 .item
 {
 	/*margin-top: 0.4rem;*/
+	position: absolute;;
 	font-size: 0.5rem;
+	left: 0.4rem;
+	opacity: 0
 }
 /**/
 .connect
 {
 	padding-top: 0.533333rem;
-	height: 7.666667rem;
+	height: 6.866667rem;
 	position: relative;
 }
 .item_1
@@ -131,60 +138,91 @@ a:link,a:active,a:visited,a:hover
 	position: absolute;;
 	top:0.2rem;
 	left: 0.4rem;
+	 animation-delay: 300ms;
+	 animation:showContent 0.2s linear;
+  animation-fill-mode:forwards;
+
 }
 .item_2
 {
 	position: absolute;;
 	top:1rem;
 	left: 0.4rem;
+	 animation-delay: 600ms;
+	 	 animation:showContent 0.2s linear;
+  animation-fill-mode:forwards;
 }
 .item_3
 {
 	position: absolute;;
 	top:1.8rem;
 	left: 0.4rem;
+	animation-delay: 900ms;
+		 animation:showContent 0.2s linear;
+  animation-fill-mode:forwards;
 }
 .item_4
 {
 	position: absolute;;
 	top:2.6rem;
 	left: 0.4rem;
+	animation-delay: 1200ms;
+		 animation:showContent 0.2s linear;
+  animation-fill-mode:forwards;
 }
 .item_5
 {
 	position: absolute;;
 	top:3.2rem;
 	left: 0.4rem;
+	animation-delay: 1500ms;
+		 animation:showContent 0.2s linear;
+  animation-fill-mode:forwards;
 }
 .item_6
 {
 	position: absolute;;
 	top:4rem;
 	left: 0.4rem;
+	animation-delay: 1800ms;
+	 animation:showContent 0.2s linear;
+	animation-fill-mode:forwards;
 }
 .item_7
 {
 	position: absolute;;
 	top:4.8rem;
 	left: 0.4rem;
+	animation-delay: 2100ms;
+	animation:showContent 0.2s linear;
+	animation-fill-mode:forwards;
 }
 .item_8
 {
 	position: absolute;;
 	top:5.6rem;
 	left: 0.4rem;
+	animation-delay: 2400ms;
+	animation:showContent 0.2s linear;
+	animation-fill-mode:forwards;
 }
 .item_9
 {
 	position: absolute;;
 	top:6.4rem;
 	left: 0.4rem;
+	animation-delay: 2700ms;
+	animation:showContent 0.2s linear;
+	animation-fill-mode:forwards;
 }
 .item_10
 {
 	position: absolute;;
 	top:7.2rem;
 	left: 0.4rem;
+	animation-delay: 3000ms;
+	animation:showContent 0.2s linear;
+	animation-fill-mode:forwards;
 }
 .code_img,.code_img img
 {
@@ -220,6 +258,8 @@ a:link,a:active,a:visited,a:hover
 	/*padding-top: 0.4rem;*/
      	text-indent: 1.066667rem;
      	line-height: 0.666667rem;
+     	font-size: 0.533333rem
+     	line-height: 0.8rem;
 }
 .com_img
 {
@@ -227,7 +267,7 @@ a:link,a:active,a:visited,a:hover
 	height: 4.3rem;
 	float: left;
 	margin-right: 0.133333rem;
-
+	opacity: 0;
 }
 .company_huanjing
 {
@@ -264,13 +304,17 @@ a:link,a:active,a:visited,a:hover
 }
 .down_btn
 {
-	position: absolute;
+/*	position: absolute;
 	bottom: -0.266667rem;
-	left:50%;
-	transform: translateX(-50%) scale(0.5);;
-	width: 2.0rem
+	left:50% !important;
+	transform: translateX(-50%) scale(0.5)!important;;*/
+	width: 2.0rem;
 	height:1.333333rem;
-
+	display: block;
+	margin:0 auto;
+	  -webkit-animation-duration: 3s;
+   -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
 }
 /**/
 .pro_box
@@ -294,9 +338,54 @@ a:link,a:active,a:visited,a:hover
 	border-radius: 0.133333rem;
 	background-color: white;
 	margin-bottom: 0.266667rem;
+	animation-fill-mode:forwards;
+	opacity: 0
 }
 .p_img_item
 {
 	width: 4.4rem;
 	height: 3.466667rem;
+}
+
+
+/*动画*/
+.show_content_
+{
+  animation:showContent 0.2s linear;
+  animation-fill-mode:forwards;
+  animation-delay: 0;
+}
+@keyframes showContent {
+  0% {
+   	
+    opacity: 0;
+    left: -6.666667rem;
+  }
+  100%{
+  	left: 0.4rem;
+     opacity: 1;
+  }
+}
+.logo_move
+{
+  animation:chanD 0.2s linear;
+  animation-fill-mode:forwards;
+  animation-delay: 2s;
+}
+@keyframes chanD {
+  0% {
+   	transform: scale(1.5);	
+  }
+  50%
+  {
+  	transform: scale(0.9);	
+  }
+  100%{
+  	transform: scale(1);	
+  }
+}
+
+.down_btn {
+
+
 }
