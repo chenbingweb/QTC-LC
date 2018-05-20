@@ -1,7 +1,7 @@
-@font-face { 
-  font-family: shuwei; /*这里是说明调用来的字体名字*/ 
-  src: url('./shuwei.ttf'); /*这里是字体文件路径*/ 
-} 
+/*@font-face { 
+  font-family: shuwei; 
+  src: url('./shuwei.ttf'); 
+} */
 html,body {
 	height: 100%;
 	min-height: 100%;
