@@ -82,7 +82,12 @@ a:link,a:active,a:visited,a:hover
 {
 	width: 1.6rem;
 	height: 1.6rem;
-	border-radius: 50%;
+/*	border-radius: 50%;*/
+}
+.enlish_name
+{
+	font-size: 0.266667rem;
+	padding-top: 0.133333rem;
 }
 .header_box
 {
@@ -111,44 +116,74 @@ a:link,a:active,a:visited,a:hover
 }
 .item
 {
-	margin-top: 0.4rem;
-	font-size: 0.6rem;
+	/*margin-top: 0.4rem;*/
+	font-size: 0.5rem;
 }
 /**/
 .connect
 {
 	padding-top: 0.533333rem;
-	height: 6.666667rem;
+	height: 7.666667rem;
 	position: relative;
 }
 .item_1
 {
 	position: absolute;;
-	top:0.4rem;
+	top:0.2rem;
 	left: 0.4rem;
 }
 .item_2
 {
 	position: absolute;;
-	top:1.6rem;
+	top:1rem;
 	left: 0.4rem;
 }
 .item_3
 {
 	position: absolute;;
-	top:2.8rem;
+	top:1.8rem;
 	left: 0.4rem;
 }
 .item_4
 {
 	position: absolute;;
-	top:4.0rem;
+	top:2.6rem;
 	left: 0.4rem;
 }
 .item_5
 {
 	position: absolute;;
-	top:5.4rem;
+	top:3.2rem;
+	left: 0.4rem;
+}
+.item_6
+{
+	position: absolute;;
+	top:4rem;
+	left: 0.4rem;
+}
+.item_7
+{
+	position: absolute;;
+	top:4.8rem;
+	left: 0.4rem;
+}
+.item_8
+{
+	position: absolute;;
+	top:5.6rem;
+	left: 0.4rem;
+}
+.item_9
+{
+	position: absolute;;
+	top:6.4rem;
+	left: 0.4rem;
+}
+.item_10
+{
+	position: absolute;;
+	top:7.2rem;
 	left: 0.4rem;
 }
 .code_img,.code_img img
@@ -189,7 +224,7 @@ a:link,a:active,a:visited,a:hover
 .com_img
 {
 	width: 4.666667rem;
-	height: 4.0rem;
+	height: 4.3rem;
 	float: left;
 	margin-right: 0.133333rem;
 
@@ -203,7 +238,7 @@ a:link,a:active,a:visited,a:hover
 {
 	/*width: 5.666667rem;*/
 	width: 9.2rem;
-	height: 3.0rem;
+	height: 6.0rem;
 	overflow: scroll;
 	display: inline-flex;
 }
@@ -221,8 +256,8 @@ a:link,a:active,a:visited,a:hover
 }
 .com_img_2
 {
-	width: 4.666667rem;
-	height: 3.0rem;
+	width: 7.666667rem;
+	height: 6.0rem;
 	float: left;
 	margin-right: 0.133333rem;
 	border-radius: 0.133333rem;
