@@ -24,6 +24,7 @@
 </head>
 <!-- https://chenbingweb.github.io/QTC-LC/. -->
 <body class="shopping_body">
+	<audio  style="display:none" loop="loop" controls  id="audio" autoplay="autoplay" src="http://sc1.111ttt.cn/2016/1/11/28/204280856476.mp3"></audio>
 	<div class="shopping_box" >
 		<div class="swiper-container" id="swiper-container">
 				<ul class="swiper-wrapper">
@@ -64,14 +65,19 @@
 							<div class="company_info" >
 									<img src="./images/c1.jpg" class="com_img" id="cm_1"><span id="cn_1">公司成立于2010年，目前分别在河北固安和江苏徐州有两个工厂，是主营汽车模具标准件、精密铸造、来图样定制及自动化相关产品的生产型企业。</span>
 							</div>
-								<div class="company_info"  style="margin-top:0.25rem;height:8.2rem">
-									<img id="cm_2" src="./images/c2.jpg" class="com_img" style="float:right">
-									<span id="cn_2">汽车模具标准件全系列及全标准系列产品
-										精密铸造零件的一体式服务；
-										工厂自动化相关开发及应用；
-									<span style="color:#333;font-weight:bold">企业文化及愿景：</span>
-									持续以百米的速度跑马拉松，只争朝夕，创御未来！
-									</span>
+								<div class="company_info_2"  >
+									<div class="it_box">
+											<p>主营项目：</p>
+											<p class="it_1">♦汽车模具标准件</p>
+											<p class="it_1">♦精密铸造</p>
+											<p class="it_1">♦来图样定制</p>
+											<p class="it_1">♦自动化相关产品</p>
+									</div>
+										<img id="cm_2" src="./images/c2.jpg" class="com_img" >
+							</div>
+							<div class="company_info_3" >
+									<p>企业文化及愿景：</p>
+									<p class="qywh">持续以百米的速度跑马拉松，只争朝夕，创御未来！</p>
 							</div>
 								<img class="down_btn" src="./images/down_la.png">
 					</li>
@@ -184,9 +190,18 @@
 	</div>
 	<script type="text/javascript" src="./js/index.js"></script>
 	<script type="text/javascript">
-
+  				function audioAutoPlay() {
+				        var audio = document.getElementById('audio');
+				            audio.play();
+				    }
 			window.onload=function(){
-				
+		
+				document.addEventListener('touchstart', function () {
+				  
+				    audioAutoPlay();
+				});
+
+			
 				  new Swiper('#swiper-container', {
 						loop: false,
 						autoplay: 0,
@@ -241,7 +256,15 @@
       							$('#cm_1').animateCss('rotateInDownLeft').css('opacity','1');;
       							$('#cm_2').animateCss('rotateInDownRight').css('opacity','1');;
       							$("#cn_1").animateCss('pulse');
-      								$("#cn_2").animateCss('pulse');
+   								$("#cn_2").animateCss('pulse');
+   								$('.qywh').animateCss('tada');
+   								$('.it_box').find('.it_1').each(function(index,item){
+   									setTimeout(function(){
+   										$(item).animateCss('bounce')
+   									},500+index*400)
+   										
+   									
+   								})
       						}
       						if(swiper.snapIndex==2)
       						{
@@ -249,8 +272,8 @@
       								$('#page3').find('.p_img_box').each(function(index,item){
       									console.log(item)
       									setTimeout(function(){
-      										$(item).animateCss('zoomIn').css('opacity','1');
-      									},200+(index*40))
+      										$(item).animateCss('rollIn').css('opacity','1');
+      									},500+(index*340))
       										
       								})
       						}
@@ -259,8 +282,8 @@
       								$('#page4').find('.p_img_box').each(function(index,item){
       									console.log(item)
       									setTimeout(function(){
-      										$(item).animateCss('zoomIn').css('opacity','1');
-      									},200+(index*40))
+      										$(item).animateCss('rollIn').css('opacity','1');
+      									},500+(index*340))
       										
       								})
       						}
